@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+body {
+  background-color: #7fddff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.addProduct {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#listHeader tr th {
+  padding: 6px;
+}
+
+.inputProduct {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #636363;
+  border-radius: 4px;
+}
+
+#addItem {
+  padding: 15px;
+  border: 1px solid #636363;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.deleteBtn {
+  background-color: #cc2323;
+  border: 0;
+  padding: 5px;
+  color: azure;
+}
+
+.editBtn {
+  background-color: #187b05;
+  border: 0;
+  padding: 5px;
+  color: azure;
+}
+
+#successMessage {
+  display: none;
+  font-size: 25px;
+}
