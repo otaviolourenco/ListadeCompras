@@ -1,9 +1,5 @@
 // Seleciona os campos de entrada de preço unitário e quantidade
-var unitPriceField = document
-  .getElementById("uniPrice")
-  .addEventListener("input", function () {
-    let value = this.value;
-  });
+var unitPriceField = document.getElementById("uniPrice");
 var quantityField = document.getElementById("quanti");
 
 // Adiciona um ouvinte de evento de mudança de valor para cada campo
@@ -16,14 +12,16 @@ function updateTotalPrice() {
   var totalPriceField = document.getElementById("totalPrice");
 
   // Obtém os valores atuais do preço unitário e da quantidade
-  var unitPrice = unitPriceField.value;
-  var quantity = quantityField.value;
+  var unitPrice = Number(unitPriceField.value);
+  var quantity = Number(quantityField.value);
 
   // Calcula o preço total multiplicando o preço unitário pela quantidade
   var totalPrice = unitPrice * quantity;
 
   // Define o valor do campo de entrada de preço total como o novo preço total calculado
   totalPriceField.value = totalPrice;
+  console.log(typeof unitPrice);
+  console.log(typeof quantity);
 }
 
 // Seleciona o botão "Adicionar item"
@@ -45,10 +43,12 @@ addItemBtn.addEventListener("click", function () {
     "<td>" +
     productName +
     "</td><td>" +
+    "€ " +
     unitPrice +
     "</td><td>" +
     quantity +
     "</td><td>" +
+    "€ " +
     totalPrice +
     "</td><td><button class='deleteBtn'>Excluir</button></td><td><button class='editBtn'>Editar</button></td>";
 
