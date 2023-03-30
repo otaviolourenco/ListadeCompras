@@ -20,8 +20,6 @@ function updateTotalPrice() {
 
   // Define o valor do campo de entrada de preço total como o novo preço total calculado
   totalPriceField.value = totalPrice;
-  console.log(typeof unitPrice);
-  console.log(typeof quantity);
 }
 
 // Seleciona o botão "Adicionar item"
@@ -50,7 +48,7 @@ addItemBtn.addEventListener("click", function () {
     "</td><td>" +
     "€ " +
     totalPrice +
-    "</td><td><button class='deleteBtn'>Excluir</button></td><td><button class='editBtn'>Editar</button></td>";
+    "</td><td><button class='deleteBtn'>X</button></td><td><button class='editBtn'>✎</button></td>";
 
   //Exibir mensagem de sucesso ao add item
   function showSuccessMessage() {
